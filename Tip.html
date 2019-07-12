@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tip</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="tip.css">
+</head>
+<body>
+    <script src="tip.js"></script>
+    <div id="calculator"> </div>
+
+    <div class="container">
+<center> 
+
+<h1> Tip Collector</h1>
+<h2> How much was your bill?</h2>
+<form class="form-inline">
+        <div class="form-group">
+          <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+          <div class="input-group">
+            <div class="input-group-addon">$</div>
+            <input id="billamt" type="text" class="form-control"  placeholder="Amount">
+            <div class="input-group-addon">.00</div>
+          </div>
+        </div>
+        <h2> How was your serivce?</h2>
+        <select class="form-control" id="serviceQual">
+                <option value="0.3">30% - Excellent</option>
+                <option value="0.2">20% - Good</option>
+                <option value=".15">15% - Okay</option>
+                <option value=".1">10% - Poor</option>
+                <option value=".05">5% - Awful</option>
+              </select>
+              <h2> How many people are splitting the bill?</h2>
+
+<input id="peopleamt" type="text" class="form-control" placeholder="# of people">
+<div>
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn btn-danger" onclick="calculator()">Calculate</button>
+</div>
+
+</form> 
+<div id="tip"></div>
+
+    </center> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+body{
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDotNYlYHEhZFgA4PF_IJrPxegu2lNrHvPFRbmSIPzwIygLVJ9mg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+#tip{
+    font-size: 60px;
+    color: white;
+}
